@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MyPortfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="text-center" id="Home">My Projects</h1>
+    <div id="portfolio-section" class="card-container">
+        <div class="card">
+            <img src="kick.png" alt="Project 1" class="card-img">
+            <div class="card-content">
+                <h3 onclick="changeBackgroundColor('project1')">Project 1</h3>
+                <p>Kick Streaming</p>
+                <div class="read-more-content" style="display: none;">
+                    <p>Kick Streaming is a dynamic and engaging platform dedicated to live streaming and video content. 
+                    It offers a seamless experience for both content creators and viewers, 
+                    featuring high-quality video streaming, interactive chat, and a wide array of entertainment options.</p>
+                </div>
+                <a href="#" class="btn read-more-btn" onclick="toggleReadMore(event)">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="iphone.png" alt="Project 2" class="card-img">
+            <div class="card-content">
+                <h3 onclick="changeBackgroundColor('project2')">Project 2</h3>
+                <p>Iphone</p>
+                <div class="read-more-content" style="display: none;">
+                    <p>The iPhone is a line of smartphones designed and marketed by Apple Inc. It combines a mobile phone, iPod, and internet communication device in a single handheld device.</p>
+                </div>
+                <a href="#" class="btn read-more-btn" onclick="toggleReadMore(event)">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="website.png" alt="Project 3" class="card-img">
+            <div class="card-content">
+                <h3 onclick="changeBackgroundColor('project3')">Project 3</h3>
+                <p>InspireCraft</p>
+                <div class="read-more-content" style="display: none;">
+                    <p>A simple globe or earth icon to symbolize global reach or creativity.</p>
+                </div>
+                <a href="#" class="btn read-more-btn" onclick="toggleReadMore(event)">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5" id="contact">
+        <h1 class="text-center">Contact Me</h1>
+        <form onsubmit="return submitForm(event)">
+            <div class="form-group">
+                <label for="exampleInputName1">Name</label>
+                <input type="text" class="form-control" id="exampleInputName1" placeholder="Enter Name" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputMessage1">Message</label>
+                <textarea class="form-control" id="exampleInputMessage1" placeholder="Enter Message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+        
+</body>
+</html>
